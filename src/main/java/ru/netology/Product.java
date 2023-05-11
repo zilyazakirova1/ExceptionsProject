@@ -18,9 +18,15 @@ public class Product {
     public String getTitle() {
         return title;
     }
+    public void setTitle(String newTitle) {
+        title = newTitle;
+    }
 
     public int getPrice() {
         return price;
+    }
+    public void setPrice(int newPrice) {
+        price = newPrice;
     }
 
     // Вспомогательные методы для корректной работы equals
@@ -36,7 +42,6 @@ public class Product {
     public int hashCode() {
         return Objects.hash(id, title, price);
     }
-    // геттеры + сеттеры
-    // на id только геттер — пусть будет неизменяемым для товара
+   
 }
 
