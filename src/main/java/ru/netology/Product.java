@@ -7,7 +7,7 @@ public class Product {
     protected String title;
     protected int price;
 
-    public Product() {
+    public Product(int i, String футболка, int i1) {
         this.id = id;
         this.title = title;
         this.price = price;
