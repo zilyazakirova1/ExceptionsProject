@@ -12,6 +12,16 @@ public class Product {
         this.title = title;
         this.price = price;
     }
+    public int getId() {
+        return id;
+    }
+    public String getTitle() {
+        return title;
+    }
+
+    public int getPrice() {
+        return price;
+    }
 
     // Вспомогательные методы для корректной работы equals
     @Override
