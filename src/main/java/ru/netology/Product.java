@@ -7,17 +7,20 @@ public class Product {
     protected String title;
     protected int price;
 
-    public Product(int id, String title, int price) {
+    public Product() {
         this.id = id;
         this.title = title;
         this.price = price;
     }
+
     public int getId() {
         return id;
     }
+
     public String getTitle() {
         return title;
     }
+
     public void setTitle(String newTitle) {
         title = newTitle;
     }
@@ -25,6 +28,7 @@ public class Product {
     public int getPrice() {
         return price;
     }
+
     public void setPrice(int newPrice) {
         price = newPrice;
     }
@@ -42,6 +46,6 @@ public class Product {
     public int hashCode() {
         return Objects.hash(id, title, price);
     }
-   
+
 }
 
