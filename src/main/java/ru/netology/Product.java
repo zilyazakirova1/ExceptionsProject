@@ -7,7 +7,7 @@ public class Product {
     protected String title;
     protected int price;
 
-    public Product(int i, String футболка, int i1) {
+    public Product(int id, String title, int price) {
         this.id = id;
         this.title = title;
         this.price = price;
@@ -34,18 +34,20 @@ public class Product {
     }
 
     // Вспомогательные методы для корректной работы equals
-    @Override
+  /*  @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
         return id == product.id && price == product.price && title.equals(product.title);
-    }
+   */
+}
 
-    @Override
+  /*  @Override
     public int hashCode() {
         return Objects.hash(id, title, price);
-    }
+ */
 
-}
+
+
 
